@@ -1,15 +1,12 @@
+//Escribir una función que determine si un número es par o impar.
 
+function getOddEven(num) {
+    if (num % 2 === 0) {
+        console.log("It's an even number");   
+    } else {
+        console.log("It's an odd number");
+    }
+}
 
-
-
-
-
-
-
-// git add .
-
-// git commit -m "Primer commit": creación de carpeta proyecto-finalmod3 a través de VITE, eliminación de carpetas y archivos innecesarios, creación de carpeta algoritmos y arvhicos de ejercicios del 1 al 5
-
-// git push -u origin main/master
-
-//README.md
+getOddEven(4);
+getOddEven(11);
