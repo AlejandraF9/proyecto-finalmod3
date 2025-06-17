@@ -5,7 +5,7 @@ function checkPalindrome(text) {
     if(text === string) {
         console.log("It's a palindrome");
     } else {
-        console.log("Is not a palindrome");
+        console.log("Isn't a palindrome");
     }
 };
 

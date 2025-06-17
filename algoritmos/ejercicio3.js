@@ -3,8 +3,7 @@
 function findBigNum() {
     let array = [4, 45, 33, 105, 26, -3];
     array = array.sort((a, b) => b - a);
-    let num = array[0];
-    console.log(num);
+    return array[0];
 }
 
-findBigNum();
+console.log(findBigNum());
