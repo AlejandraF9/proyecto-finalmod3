@@ -3,9 +3,12 @@
 
 
 
+
+//Verificar nombres funciones
+
 // git add .
 
-// git commit -m
+// git commit -m  
 
 // git push -u origin main/master
 
