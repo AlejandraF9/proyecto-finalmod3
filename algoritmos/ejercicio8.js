@@ -8,8 +8,8 @@ function countLetter(text, letter) {
         times++;
         }
     }
-    return times;
+    return `The number of times the letter ${letter} is repeated is ${times} times`;
 };
 
-console.log(countLetter("apple", "p"));
-console.log(countLetter("notebook", "o"));
+console.log("Exercise 8:", countLetter("apple", "p"));
+console.log("Exercise 8:", countLetter("notebook", "o"));

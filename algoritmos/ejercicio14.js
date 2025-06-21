@@ -5,9 +5,9 @@ function validateAnagrams(text1, text2) {
     const letters2 = text2.split("").sort().join("");
 
     if(letters1 === letters2) {
-        console.log("It's an Anagram");
+        console.log("Exercise 14: It's an Anagram");
     } else {
-        console.log("Isn't an Anagram");   
+        console.log("Exercise 14: Isn't an Anagram");   
     }
     
 }

@@ -6,9 +6,10 @@ function getCentury(num) {
     for(let i = 0; i < num; i += 100) {
         century +=1;
     }
-    return century;
+
+    return `The year ${num} corresponds to the ${century} century`;
 }
 
-console.log(getCentury(1895));
-console.log(getCentury(1995));
-console.log(getCentury(2005));
+console.log("Exercise 19:", getCentury(1000));
+console.log("Exercise 19:", getCentury(1995));
+console.log("Exercise 19:", getCentury(2001));

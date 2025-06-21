@@ -7,4 +7,4 @@ function calculateFibonacci(n) {
     return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
 }
 
-console.log(calculateFibonacci(5));
+console.log(`Exercise 6: The Fibonacci number at position 5 is ${calculateFibonacci(5)}`);

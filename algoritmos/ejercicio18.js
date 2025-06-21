@@ -10,14 +10,14 @@ function transformToLeetSpeak(sentence) {
         T: 7,
     };
 
-    let string = "";
+    let transformedString = "";
 
     for(let i = 0; i < sentence.length; i++) {
     const letter = sentence[i].toUpperCase();
-    string += leetSpeak[letter] || sentence[i];
+    transformedString += leetSpeak[letter] || sentence[i];
 }
 
-return string;
+return `The leet speak form of "${sentence}" is "${transformedString}"`;
 }
 
-console.log(transformToLeetSpeak("This is a test"));
+console.log("Exercise 18:",transformToLeetSpeak("This is a test"));

@@ -1,24 +1,19 @@
 // Escribir una función que elimine los elementos duplicados de un array.
 
-// function deleteDuplicate(array) {
-//     const array = [7, 15, 18, 23, 30, 30, 45];
+function deleteDuplicates(array) {
 
-//     for(let i = 0; i < array.length; i++) {
-//         const num = array[i];
+    for (let i = 0; i < array.length; i++) {
+        for (let j = 0; j < array.length; j++) {
+            if (i !== j && array[i] === array[j]) {
+                array.splice(j, 1);
+                j--;
+            }
+        }
+    }
 
-//         if (num === num) {
+    return array;
+}
 
-//         }
-//     }
-// }
+console.log("Exercise 12:", deleteDuplicates([5, 4, 3, 4, 2, 4, 4, 3, 5, 1]));
 
-
-// .FILTER( ) //filtra los elementos. No muta array original
-
-// Let array = [-1, 0, 1, 4, 5, 6];
-
-// console.log(array.filter(n => n > 2)); //En lugar de hacer una copia, se trabaja con los datos que ya se tienen. En este caso, se filtran los números que sean mayores que dos, por lo que aparecerá: [4, 5, 6]; (debe guardarse en una nueva variable, si se quiere continuar con la misma)
-
-// let nombres = ["Carmen", "Carol", "Yesenia"];
-
-// console.log(nombres.filter((name) => name.includes("e"))); //Esto mostrará los nombres que incluyan la letra e: [“Carmen”, “Yesenia”]
+console.log("Exercise 12:", deleteDuplicates([5, "hola", 3, 4, 2, "hola", 4, 5, 1]));

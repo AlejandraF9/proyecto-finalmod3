@@ -8,4 +8,4 @@ function returnFactorial(num) {
     return factorial;
 }
 
- console.log(returnFactorial(5));
+ console.log(`Exercise 4: The factorial number is ${returnFactorial(5)}`);

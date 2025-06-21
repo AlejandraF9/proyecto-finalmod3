@@ -1,8 +1,13 @@
 // Crear un algoritmo que invierta un string.
 
 function reverseString(string) {
-    return string.split("").reverse().join("");
+    if(typeof string === "string") {
+        let reversedString = string.split("").reverse().join("");
+        console.log("Exercise 2:", reversedString);
+    } else {
+        console.log("Exercise 2: Value must be a string");
+    }
 }
 
-const text = reverseString("notebook");
-console.log(text);
+reverseString("notebook");
+reverseString(true);

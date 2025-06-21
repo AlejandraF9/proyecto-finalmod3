@@ -11,21 +11,21 @@ function convertRomansToArabic(num) {
         M: 1000,
     };
 
-    let completeNum = 0;
+    let convertedNum = 0;
 
     for(let i = 0; i < num.length; i++) {
         const firstNum = romans[num[i]];
         const nextNum = romans[num[i + 1]];
 
         if(firstNum < nextNum) {
-            completeNum += nextNum - firstNum;
+            convertedNum += nextNum - firstNum;
             i++;
         } else {
-            completeNum += firstNum;
+            convertedNum += firstNum;
         }
     }
 
-    return completeNum;
+    return `The roman number ${num} in arabic is ${convertedNum}`;
 }
 
-console.log(convertRomansToArabic("MCXIX"));
+console.log("Exercise 16:", convertRomansToArabic("MCXIX"));

@@ -7,13 +7,19 @@ Escribe una funcion que calcule los millisegundos que han pasado desde media noc
 – Hay 1000 millisegundos en un segundo
 – Podemos obtener la hora, minutos y segundos con la función "getTime" */
 
-function calculateMilliseconds(second, minute, hour) {
-    const millisecondsInSecond = second * 1000;
-    const millisecondsInMinute = minute * 60 * 1000;
-    const millisecondsInHour = hour * 60 * 60 * 1000;
+function calculateMilliseconds(hour, minute, second) {
+    if (hour >= 0 && hour <= 24 && minute >= 0 && minute <= 59 && second >= 0 && second <= 59) {
+        const millisecondsInHour = hour * 60 * 60 * 1000;
+        const millisecondsInMinute = minute * 60 * 1000;
+        const millisecondsInSecond = second * 1000;
 
-    return millisecondsInSecond + millisecondsInMinute + millisecondsInHour;
+        return millisecondsInHour + millisecondsInMinute + millisecondsInSecond;
+    } else {
+        return "Hours, minutes and seconds must be valid numbers."
+    }
+    
 }
 
-console.log(calculateMilliseconds(1, 1, 1));
-console.log(calculateMilliseconds(20, 13, 5));
+console.log(`Exercise 20: ${calculateMilliseconds(0, 0, 5)} have passed since midnight`);
+console.log(`Exercise 20: ${calculateMilliseconds(23, 59, 59)} have passed since midnight`);
+console.log("Exercise 20:", calculateMilliseconds(25, 62, 59));

@@ -10,15 +10,11 @@ function checkBracketsBalance(text) {
             brackets++;
         } else if (letter === ")") {
             brackets--;
-
-            if(brackets < 0) {
-                return false;
-            }
         }
     }
 
     return brackets === 0;
 }
  
-console.log(checkBracketsBalance("hola"));
-console.log(checkBracketsBalance("((hola)"));
+console.log("Exercise 17:", checkBracketsBalance("hola"));
+console.log("Exercise 17:", checkBracketsBalance("((hola)"));
